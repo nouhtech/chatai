@@ -48,31 +48,6 @@ async def on_ready():
     elif os.name == 'nt':
         os.system('cls')
 
-    ascii_art = """
-    \033[1;35m
-    
-███████╗██████╗ ███████╗██╗  ██╗████████╗██████╗ ██╗   ██╗███╗   ███╗
-██╔════╝██╔══██╗██╔════╝██║ ██╔╝╚══██╔══╝██╔══██╗██║   ██║████╗ ████║
-███████╗██████╔╝█████╗  █████╔╝    ██║   ██████╔╝██║   ██║██╔████╔██║
-╚════██║██╔═══╝ ██╔══╝  ██╔═██╗    ██║   ██╔══██╗██║   ██║██║╚██╔╝██║
-███████║██║     ███████╗██║  ██╗   ██║   ██║  ██║╚██████╔╝██║ ╚═╝ ██║
-╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝
-                                                                     
-\033[0m
-    """
-
-    print(ascii_art)
-    print(print_in_color(f"{bot.user} aka {bot.user.name} has connected to Discord!", "\033[1;97"))
-    print(print_in_color(f"  Loaded {num_commands} commands", "1;35"))
-    print(print_in_color(f"      Invite link: {invite_link}", "1;36"))
-
-
-# Function to generate response based on custom personality prompts
-
-
-
-
-
 @bot.hybrid_command(name="reset", description="Clears bot message history")
 async def reset(ctx):
     global message_history
